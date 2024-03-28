@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BuscarConselhoActivity">
+
+    <Button
+        android:id="@+id/btn_favoritar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="223dp"
+        android:text="Favoritar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/input_busca_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Buscar por nome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_buscar_nome"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btn_buscar_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/input_busca_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Buscar por ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_busca_nome" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="344dp"
+        android:layout_height="226dp"
+        android:layout_margin="16dp"
+        android:gravity="start"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_busca_id"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/btn_buscar_id"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="11dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_busca_id"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar_nome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
